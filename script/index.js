@@ -41,10 +41,10 @@ for (let callbtn of callbtns) {
         `;
       historyContainer.append(newHistory);
 
-      if(coins < 20 ){
-        for(let callbtn of callbtns){
-           alert("Not enough coins.Please recharge")
-      return 
+      if (coins < 20) {
+        for (let callbtn of callbtns) {
+          alert("Not enough coins.Please recharge");
+          return;
         }
       }
     }
