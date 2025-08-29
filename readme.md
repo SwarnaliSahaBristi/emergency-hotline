@@ -163,3 +163,18 @@ How to get current local time in js
 ---
 
 # Let's Code and Achieve your Dream 🎯
+1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+Answer:getElementById:selects a single element,returns a single dom object.
+getElementsByClassName:selects all elements having same class name,returns a live HTML collects of elements.
+querySelector:selects id,class,tag css selector;returns matching HTML element objject
+querySelectorAll:selects all elements that match a specified CSS selector.Returns Nodelist elements.
+2. How do you **create and insert a new element into the DOM**?
+Answer:let el = document.createElement("p");
+el.textContent = "Hello";
+document.body.appendChild(el);
+3. What is **Event Bubbling** and how does it work?
+Answer:When an event (e.g., a click) occurs on a child element, it first triggers on that child and then "bubbles up" to its parent, grandparent, and so on, until it reaches the root of the DOM (or where the event listener is attached).
+4. What is **Event Delegation** in JavaScript? Why is it useful?
+Answer:
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
+Answer:
