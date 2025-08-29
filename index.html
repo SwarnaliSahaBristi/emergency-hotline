@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <header>
+    <header class="">
       <div
         class="mx-auto w-full max-w-[1100px] mt-4 flex justify-between items-center"
       >
@@ -28,12 +28,12 @@
         </div>
         <div class="flex gap-5">
           <p class="w-[85px] h-[40px] bg-green-100 rounded-3xl p-2 text-center">
-            <span class="font-bold">0</span> ❤️
+            <span id="life-count" class="font-bold">0</span> ❤️
           </p>
           <p
             class="w-[85px] h-[40px] bg-green-100 rounded-3xl p-2 text-center flex gap-2 justify-center items-center"
           >
-            <span class="font-bold">100</span
+            <span id="coin-showing" class="font-bold">100</span
             ><img class="w-5 h-5" src="./assets/coin.png" alt="" />
           </p>
           <p
@@ -44,7 +44,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="bg-green-50">
       <section
         class="banner mt-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
       >
@@ -74,7 +74,7 @@
             <div class="shadow bg-white rounded-xl p-4 ">
               <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" class="w-10 h-10 " alt="">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p id="love-count-1"><i class="fa-regular fa-heart"></i></p>
               </div>
               <div class="">
                 <h1 class="font-bold text-xl mt-2">National Emergency</h1>
@@ -85,7 +85,7 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
               <!-- police-helpline -->
@@ -102,8 +102,8 @@
               </div>
 
               <div class=>
-                <button class="btn w-[10px] h-[50px] rounded-lg text-lg text-gray-600 w-[100px] h-[50px]"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="btn rounded-lg text-lg text-gray-600 w-[100px] h-[50px]"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
               <!-- fire-service -->
@@ -121,7 +121,7 @@
 
               <div class=>
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
              <!-- ambulance-service -->
@@ -139,7 +139,7 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
              <!-- women and child health -->
@@ -157,7 +157,7 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
              <!-- Anti-Corruption -->
@@ -175,7 +175,7 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
              <!-- Electricity Helpline -->
@@ -193,7 +193,7 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
              <!-- Brac Helpline -->
@@ -211,7 +211,7 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
              <!-- Bangladesh Railway Helpline  -->
@@ -229,16 +229,23 @@
 
               <div class="">
                 <button class="btn w-[100px] h-[50px] rounded-lg text-lg text-gray-600"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-                <button class="btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button class="call-btn btn bg-green-500 text-white font-semibold text-xl w-[100px] h-[50px] rounded-lg text-center"><span><i class="fa-solid fa-phone"></i></span>Call</button>
               </div>
             </div>
             </div>
           </div>
         </section>
-        <aside id="call-history" class="col-span-3 bg-yellow-400">
-          
+        <aside id="call-history-box" class="col-span-3 shadow h-[975px] ml-6 rounded-xl  bg-white">
+            <div class="history-box p-5 flex justify-between items-center text-center">
+              <h2 class="font-bold"><span class="mr-2"><i class="fa-regular fa-clock"></i></span>Call History</h2>
+              <button class="btn w-[70px] h-[40px] bg-green-600 rounded-3xl p-2 text-center font-semibold text-white" id="clear-btn">Clear</button>
+            </div>
+            <div class="space-y-3" id="History-container"></div>
+            
         </aside>
       </section>
     </main>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
